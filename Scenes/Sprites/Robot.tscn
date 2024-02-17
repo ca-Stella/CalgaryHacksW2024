@@ -1,6 +1,7 @@
-[gd_scene load_steps=8 format=3 uid="uid://ctdy2xymqayr5"]
+[gd_scene load_steps=9 format=3 uid="uid://ctdy2xymqayr5"]
 
 [ext_resource type="Texture2D" uid="uid://daak81rctk83t" path="res://Assets/Sprites/robot_1_animated-Sheet.png" id="1_3emv7"]
+[ext_resource type="Script" path="res://Scenes/Scripts/Robot.gd" id="1_i2cle"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_5wdb6"]
 atlas = ExtResource("1_3emv7")
@@ -38,6 +39,7 @@ size = Vector2(32, 32)
 size = Vector2(32, 32)
 
 [node name="Robot" type="CharacterBody2D"]
+script = ExtResource("1_i2cle")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_pm3xo")

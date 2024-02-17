@@ -1,4 +1,8 @@
-[gd_scene format=3 uid="uid://sxldrl2dlyq"]
+[gd_scene load_steps=4 format=3 uid="uid://sxldrl2dlyq"]
+
+[ext_resource type="PackedScene" uid="uid://16odar3pibnb" path="res://Scenes/Sprites/Player.tscn" id="1_xlxvi"]
+[ext_resource type="PackedScene" uid="uid://ctdy2xymqayr5" path="res://Scenes/Sprites/Robot.tscn" id="2_8sugg"]
+[ext_resource type="PackedScene" uid="uid://eckcyxmpkb7v" path="res://Scenes/Sprites/Trashbag.tscn" id="3_p7v8t"]
 
 [node name="Game" type="Control"]
 layout_mode = 3
@@ -18,3 +22,12 @@ grow_vertical = 2
 color = Color(0.141176, 0.00784314, 0.0196078, 1)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Player" parent="." instance=ExtResource("1_xlxvi")]
+position = Vector2(239, 114)
+
+[node name="Robot" parent="." instance=ExtResource("2_8sugg")]
+position = Vector2(278, 68)
+
+[node name="Trashbag" parent="." instance=ExtResource("3_p7v8t")]
+position = Vector2(188, 113)
