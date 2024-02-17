@@ -17,3 +17,5 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.141176, 0.00784314, 0.0196078, 1)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
