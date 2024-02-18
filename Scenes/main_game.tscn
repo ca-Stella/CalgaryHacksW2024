@@ -1,0 +1,56 @@
+[gd_scene load_steps=4 format=3 uid="uid://c8sudf0e8qns8"]
+
+[ext_resource type="Script" path="res://Scenes/Scripts/MainGame.gd" id="1_wf522"]
+[ext_resource type="Script" path="res://Scenes/Scripts/HealthBarText.gd" id="2_xtvdl"]
+[ext_resource type="PackedScene" uid="uid://sxldrl2dlyq" path="res://Scenes/Game.tscn" id="3_uq0w0"]
+
+[node name="MainGame" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_wf522")
+
+[node name="Label" type="Label" parent="."]
+top_level = true
+layout_mode = 0
+offset_right = 230.0
+offset_bottom = 93.0
+
+[node name="Current Health" type="Label" parent="."]
+top_level = true
+layout_mode = 0
+offset_left = 400.0
+offset_right = 440.0
+offset_bottom = 23.0
+horizontal_alignment = 1
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer"]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/MarginContainer"]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="HealthBarText" type="TextEdit" parent="CanvasLayer/MarginContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+script = ExtResource("2_xtvdl")
+
+[node name="Game" parent="." instance=ExtResource("3_uq0w0")]
+layout_mode = 1
+offset_left = 2.0
+offset_top = 1.0
+offset_right = 2.0
+offset_bottom = 1.0
+
+[node name="Timer" type="Timer" parent="."]
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
