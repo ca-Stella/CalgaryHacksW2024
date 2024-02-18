@@ -1,16 +1,17 @@
 extends StaticBody2D
 
-@onready var animation = $MasterTreeV2
+@onready var animation = $Big_Rock_Type_1
 var health 
 
 func _ready():
+	animation = $Big_Rock_Type_1
 	pass
 
 
 func _process(delta):
 	health = get_parent().get_parent().mainHealth
 	
-	#health = randi_range(0,100)	
+	#MAIN ROCK
 	
 	if (health > 90):
 		animation.play("Stage_1")
@@ -19,5 +20,5 @@ func _process(delta):
 	elif(health > 51):
 		animation.play("Stage_3")
 	elif(health > 0): 
-		animation.play("Stage_4")
+		animation.play("Stage_3")
 		

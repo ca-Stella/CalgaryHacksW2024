@@ -2,3 +2,10 @@ res://Scenes/Game.tscn
 res://Scenes/main_game.tscn
 res://Scenes/Main Tree.tscn
 res://Scenes/Main Tree Anim.tscn
+res://Scenes/Big_Rock_Type_1.tscn
+res://Scenes/Big_Rock_Type_1_anim.tscn
+res://Scenes/Scripts/MainTree_Stat Body.gd
+res://Scenes/Sprites/Big_Rock_Type_1.tscn
+res://Scenes/Sprites/Big_Rock_Type_1.gd
+res://Scenes/Big_Rock_Type_1.gd
+res://Scenes/Sprites/Trashbag.tscn
