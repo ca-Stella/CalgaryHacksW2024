@@ -1,4 +1,4 @@
 res://Scenes/Game.tscn
-res://Scenes/Sprites/Robot.tscn
-res://Scenes/Sprites/Trashbag.tscn
-res://Scenes/Sprites/Player.tscn
+res://Scenes/main_game.tscn
+res://Scenes/Main Tree.tscn
+res://Scenes/Main Tree Anim.tscn
