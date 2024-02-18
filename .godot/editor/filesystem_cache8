@@ -1,18 +1,21 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1708234949
+::res://::1708237170
 icon.svg::CompressedTexture2D::8307733130991223606::1708209070::1708209070::1::::<><>::
-::res://Assets/::1708234181
-::res://Assets/Sprites/::1708234181
+::res://Assets/::1708237170
+::res://Assets/Sprites/::1708237171
 player_tmp.png::CompressedTexture2D::6934251779614768993::1708211383::1708211383::1::::<><>::
 robot_1_animated-Sheet.png::CompressedTexture2D::7159929544191301583::1708216226::1708209070::1::::<><>::
 trash.png::CompressedTexture2D::6216849290402317089::1708209070::1708209070::1::::<><>::
-::res://Assets/Sprites/png/::1708234187
+::res://Assets/Sprites/png/::1708237171
 6packplastic.png::CompressedTexture2D::2193009738488435648::1708234181::1708234187::1::::<><>::
+biggerrock_animated-Sheet.png::CompressedTexture2D::4609356965186126277::1708237171::1708237200::1::::<><>::
+bigrock_animate-Sheet.png::CompressedTexture2D::3204938475109455488::1708237171::1708237200::1::::<><>::
 bob-Sheet.png::CompressedTexture2D::3629569626977984495::1708234181::1708234187::1::::<><>::
 gameboy.png::CompressedTexture2D::7600992741831453871::1708234181::1708234187::1::::<><>::
 garbage.png::CompressedTexture2D::6082828570839524114::1708234181::1708234187::1::::<><>::
 garbagebag.png::CompressedTexture2D::3485090769298420172::1708234181::1708234187::1::::<><>::
 garbage_recycling.png::CompressedTexture2D::4767156780580389612::1708234181::1708234187::1::::<><>::
+lilrock_animated-Sheet.png::CompressedTexture2D::2324705246552105207::1708237171::1708237200::1::::<><>::
 popcan.png::CompressedTexture2D::3990930508999772158::1708234181::1708234187::1::::<><>::
 tree-Sheet.png::CompressedTexture2D::4646083220411762844::1708234181::1708234187::1::::<><>::
 tv-Sheet.png::CompressedTexture2D::4731833379659010011::1708234181::1708234187::1::::<><>::
@@ -23,11 +26,11 @@ FlagRed16x16.png::CompressedTexture2D::4789220260830589245::1708214904::17082149
 TilesetFloor.png::CompressedTexture2D::9006992917905448353::1708212682::1708212682::1::::<><>::
 TilesetNature.png::CompressedTexture2D::3911304140939329763::1708212694::1708212694::1::::<><>::
 TilesetVillageAbandoned.png::CompressedTexture2D::7598187537684083306::1708214575::1708214575::1::::<><>::
-::res://Scenes/::1708234924
-Game.tscn::PackedScene::38575118507386196::1708234924::0::1::::<><>::uid://d1lb4fga5yxbd::::res://Assets/world/TilesetFloor.png<>uid://16odar3pibnb::::res://Scenes/Sprites/Player.tscn<>uid://ctdy2xymqayr5::::res://Scenes/Sprites/Robot.tscn<>uid://bvywuwtdwly6n::::res://Assets/world/TilesetNature.png<>uid://dgivbkwtoxtt7::::res://Assets/world/TilesetVillageAbandoned.png<>uid://eckcyxmpkb7v::::res://Scenes/Sprites/Trashbag.tscn<>uid://cah601hyxq6tl::::res://Assets/world/FlagRed16x16.png<>uid://davp1w8pp8vi3::::res://Assets/world/Cactus_Sprite_Sheet.png<>uid://f4o61ii15qld::::res://Scenes/Main Tree.tscn
-Main Tree Anim.tscn::PackedScene::6998397921570633181::1708234924::0::1::::<><>::uid://davp1w8pp8vi3::::res://Assets/world/Cactus_Sprite_Sheet.png<>uid://dgw2obuiefnk3::::res://Assets/world/FlagBlue16x16.png
-Main Tree.tscn::PackedScene::411717948932642889::1708234924::0::1::::<><>::res://Scenes/Scripts/MainTree_Stat Body.gd<>uid://c6ycudsbq03af::::res://Scenes/Main Tree Anim.tscn
-main_game.tscn::PackedScene::7127452005714737161::1708234924::0::1::::<><>::res://Scenes/Scripts/MainGame.gd<>res://Scenes/Scripts/HealthBarText.gd<>uid://sxldrl2dlyq::::res://Scenes/Game.tscn
+::res://Scenes/::1708237171
+Game.tscn::PackedScene::38575118507386196::1708237171::0::1::::<><>::uid://d1lb4fga5yxbd::::res://Assets/world/TilesetFloor.png<>uid://16odar3pibnb::::res://Scenes/Sprites/Player.tscn<>uid://ctdy2xymqayr5::::res://Scenes/Sprites/Robot.tscn<>uid://bvywuwtdwly6n::::res://Assets/world/TilesetNature.png<>uid://dgivbkwtoxtt7::::res://Assets/world/TilesetVillageAbandoned.png<>uid://eckcyxmpkb7v::::res://Scenes/Sprites/Trashbag.tscn<>uid://cah601hyxq6tl::::res://Assets/world/FlagRed16x16.png<>uid://davp1w8pp8vi3::::res://Assets/world/Cactus_Sprite_Sheet.png<>uid://b8oeusywhhtix::::res://Assets/Sprites/png/tv-Sheet.png<>uid://f4o61ii15qld::::res://Scenes/Main Tree.tscn
+Main Tree Anim.tscn::PackedScene::6998397921570633181::1708235881::0::1::::<><>::uid://davp1w8pp8vi3::::res://Assets/world/Cactus_Sprite_Sheet.png<>uid://dgw2obuiefnk3::::res://Assets/world/FlagBlue16x16.png
+Main Tree.tscn::PackedScene::411717948932642889::1708235881::0::1::::<><>::res://Scenes/Scripts/MainTree_Stat Body.gd<>uid://c6ycudsbq03af::::res://Scenes/Main Tree Anim.tscn
+main_game.tscn::PackedScene::7127452005714737161::1708235881::0::1::::<><>::res://Scenes/Scripts/MainGame.gd<>res://Scenes/Scripts/HealthBarText.gd<>uid://sxldrl2dlyq::::res://Scenes/Game.tscn
 Timer.gd::GDScript::-1::1708234924::0::1::::<>Timer<>::
 ::res://Scenes/Scripts/::1708234924
 HealthBarText.gd::GDScript::-1::1708234924::0::1::::<>TextEdit<>::
