@@ -1,8 +1,10 @@
-[gd_scene load_steps=4 format=3 uid="uid://esbdk588xtju"]
+[gd_scene load_steps=6 format=3 uid="uid://esbdk588xtju"]
 
 [ext_resource type="Script" path="res://Scenes/Scripts/MainGame.gd" id="1_wf522"]
 [ext_resource type="Script" path="res://Scenes/Scripts/HealthBarText.gd" id="2_xtvdl"]
 [ext_resource type="PackedScene" uid="uid://sxldrl2dlyq" path="res://Scenes/Game.tscn" id="3_uq0w0"]
+[ext_resource type="PackedScene" uid="uid://cis2yb5dqg2h0" path="res://Scenes/StatusBar.tscn" id="4_8h0kv"]
+[ext_resource type="PackedScene" uid="uid://bmvkiddgshtwu" path="res://Scenes/PauseScreen.tscn" id="5_5pthh"]
 
 [node name="MainGame" type="Control"]
 layout_mode = 3
@@ -52,5 +54,10 @@ offset_bottom = 1.0
 
 [node name="Timer" type="Timer" parent="."]
 autostart = true
+
+[node name="StatusBar" parent="." instance=ExtResource("4_8h0kv")]
+layout_mode = 1
+
+[node name="PauseScreen" parent="." instance=ExtResource("5_5pthh")]
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

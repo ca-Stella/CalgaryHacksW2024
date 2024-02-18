@@ -1,0 +1,99 @@
+[gd_scene load_steps=17 format=3 uid="uid://cis2yb5dqg2h0"]
+
+[ext_resource type="Texture2D" uid="uid://7ov8eoglomn3" path="res://Assets/GUI/BackPackIndicatorPNG/BackpackIndicator1.png" id="1_qc37p"]
+[ext_resource type="Texture2D" uid="uid://co3jgh351oarg" path="res://Assets/GUI/BackPackIndicatorPNG/BackpackIndicator7.png" id="2_b5uvp"]
+[ext_resource type="Texture2D" uid="uid://dorqvacnfsbxi" path="res://Assets/GUI/BackPackIndicatorPNG/BackpackIndicator8.png" id="3_3r2f5"]
+[ext_resource type="Texture2D" uid="uid://5dmcl12yogca" path="res://Assets/GUI/BackPackIndicatorPNG/BackpackIndicator9.png" id="4_w7087"]
+[ext_resource type="Texture2D" uid="uid://crrxstr423578" path="res://Assets/GUI/BackPackIndicatorPNG/BackpackIndicator2.png" id="5_h0wku"]
+[ext_resource type="Texture2D" uid="uid://30v6denqq1e0" path="res://Assets/GUI/BackPackIndicatorPNG/BackpackIndicator3.png" id="6_xwpo3"]
+[ext_resource type="Texture2D" uid="uid://cgvl77fuu0goa" path="res://Assets/GUI/BackPackIndicatorPNG/BackpackIndicator4.png" id="7_tyecc"]
+[ext_resource type="Texture2D" uid="uid://cdph3vqdbewd7" path="res://Assets/GUI/BackPackIndicatorPNG/BackpackIndicator5.png" id="8_esd52"]
+[ext_resource type="Texture2D" uid="uid://bc3iprernnwr7" path="res://Assets/GUI/BackPackIndicatorPNG/BackpackIndicator6.png" id="9_8vj5q"]
+[ext_resource type="Script" path="res://Scenes/Scripts/Backpack.gd" id="10_3nps0"]
+[ext_resource type="Texture2D" uid="uid://crsn7ty3sm2k3" path="res://Assets/GUI/progressBar.png" id="10_e10yo"]
+[ext_resource type="Texture2D" uid="uid://oe30vu7cs67c" path="res://Assets/GUI/timer/timer1.png" id="10_fw2dy"]
+[ext_resource type="Texture2D" uid="uid://b4hda5hpe6xrt" path="res://Assets/GUI/timer/timer2.png" id="11_oxn4m"]
+[ext_resource type="Script" path="res://Scenes/Scripts/TextureProgressBar.gd" id="14_rhcem"]
+
+[sub_resource type="AnimatedTexture" id="AnimatedTexture_pcufd"]
+frames = 9
+pause = true
+frame_0/texture = ExtResource("1_qc37p")
+frame_1/texture = ExtResource("2_b5uvp")
+frame_1/duration = 1.0
+frame_2/texture = ExtResource("3_3r2f5")
+frame_2/duration = 1.0
+frame_3/texture = ExtResource("4_w7087")
+frame_3/duration = 1.0
+frame_4/texture = ExtResource("5_h0wku")
+frame_4/duration = 1.0
+frame_5/texture = ExtResource("6_xwpo3")
+frame_5/duration = 1.0
+frame_6/texture = ExtResource("7_tyecc")
+frame_6/duration = 1.0
+frame_7/texture = ExtResource("8_esd52")
+frame_7/duration = 1.0
+frame_8/texture = ExtResource("9_8vj5q")
+frame_8/duration = 1.0
+
+[sub_resource type="AnimatedTexture" id="AnimatedTexture_fjr8a"]
+frames = 2
+pause = true
+frame_0/texture = ExtResource("10_fw2dy")
+frame_1/texture = ExtResource("11_oxn4m")
+frame_1/duration = 1.0
+
+[node name="StatusBar" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer"]
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 40.0
+grow_horizontal = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer/MarginContainer"]
+layout_mode = 2
+color = Color(0.223529, 0.223529, 0.223529, 1)
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/separation = 96
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/MarginContainer/HBoxContainer"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="Backpack" type="TextureRect" parent="CanvasLayer/MarginContainer/HBoxContainer/MarginContainer"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+size_flags_horizontal = 8
+texture = SubResource("AnimatedTexture_pcufd")
+stretch_mode = 2
+script = ExtResource("10_3nps0")
+
+[node name="MarginContainer2" type="MarginContainer" parent="CanvasLayer/MarginContainer/HBoxContainer"]
+custom_minimum_size = Vector2(80, 0)
+layout_mode = 2
+
+[node name="Timer" type="TextureRect" parent="CanvasLayer/MarginContainer/HBoxContainer/MarginContainer2"]
+layout_mode = 2
+texture = SubResource("AnimatedTexture_fjr8a")
+
+[node name="TextureProgressBar" type="TextureProgressBar" parent="CanvasLayer/MarginContainer/HBoxContainer"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+texture_over = ExtResource("10_e10yo")
+script = ExtResource("14_rhcem")
+
+[connection signal="value_changed" from="CanvasLayer/MarginContainer/HBoxContainer/TextureProgressBar" to="CanvasLayer/MarginContainer/HBoxContainer/TextureProgressBar" method="_on_value_changed"]

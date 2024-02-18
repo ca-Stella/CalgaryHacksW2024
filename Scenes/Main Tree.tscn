@@ -10,33 +10,21 @@ var health
 
 func _ready():
 	animation = $MasterTreeV2
-	pass
 
 
 func _process(delta):
 	health = get_parent().get_parent().mainHealth
 	
 	#MAIN TREE
-	
-	if (health < 10 && health > 0):
+	if (health < 20 && health > 0):
 		animation.play(\"Stage_1\")
-	elif (health > 10 && health < 20):
-		animation.play(\"Stage_2\")
-	elif(health > 20 && health < 30):
+	elif(health > 20 && health < 50):
 		animation.play(\"Stage_3\")
-	elif(health > 30 && health < 40): 
-		animation.play(\"Stage_4\")
-	elif (health > 40 && health < 50):
-		animation.play(\"Stage_5\")
-	elif(health > 50 && health < 60):
+	elif (health > 50 && health < 70):
 		animation.play(\"Stage_6\")
-	elif(health > 60 && health < 70): 
-		animation.play(\"Stage_7\")
-	elif(health > 70 && health < 85):
+	elif(health > 70):
 		animation.play(\"Stage_8\")
-	elif(health > 85): 
-		animation.play(\"Stage_9\")
-		
+
 "
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7r16j"]

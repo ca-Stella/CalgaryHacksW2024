@@ -3,9 +3,16 @@ extends CharacterBody2D
 @export var speed = 100.0 # pixels/sec
 var screenSize
 var garbageCounter = 0
+var totalGarbageCounter = 0 # NEED TO MOVE THIS TO TREE OR STH
+# so that the bins can be the way of updating not player
+
+var backpackLevel = 0
 var faceDirection
 var canPickUp = false
 var garbage = null
+var canPushBin = false
+var bin = null
+var pushingBin = false
 
 func _ready(): 
 	screenSize = get_viewport_rect().size
@@ -36,8 +43,25 @@ func _process(delta):
 		if canPickUp:
 			garbage.get_parent().die()
 			garbageCounter += 1
+			totalGarbageCounter += 1
 			print(garbageCounter, faceDirection)
 			canPickUp = false
+		if canPushBin:
+			garbageCounter = 0
+	if Input.is_action_just_pressed("push_e"):
+		if canPushBin and !pushingBin:
+			pushingBin = true
+		elif canPushBin and pushingBin:
+			pushingBin = false
+		if !canPushBin:
+			pushingBin = false
+		print(canPushBin, pushingBin)
+				
+	
+	print(canPickUp)
+
+	if pushingBin and canPushBin:
+		bin.get_parent().move(velocity, speed, delta)
 
 	# if we have a movement vector, move based on speed and play animation
 	if velocity.length() > 0: 
@@ -58,53 +82,19 @@ func _physics_process(delta):
 	pass
 
 
-
-
 func _on_area_2d_area_entered(area):
 	if area.is_in_group("Trash"):
 		garbage = area
 		canPickUp = true
+	if area.is_in_group("Bin"):
+		bin = area
+		canPushBin = true
 
 
 func _on_area_2d_area_exited(area):
 	if area.is_in_group("Trash"):
 		garbage = null
 		canPickUp = false
-		
-		
-
-
-#func _on_top_area_2d_area_entered(area):
-#	if faceDirection == "top":
-#		if area.is_in_group("Trash"):
-#			if Input.is_action_pressed("interact"):
-#				area.queue_free()
-#				garbageCounter += 1
-#				print(garbageCounter, faceDirection)
-#
-#
-#func _on_down_area_2d_area_entered(area):
-#	if faceDirection == "down":
-#		if area.is_in_group("Trash"):
-#			if Input.is_action_pressed("interact"):
-#				area.queue_free()
-#				garbageCounter += 1
-#				print(garbageCounter, faceDirection)
-#
-#func _on_left_area_2d_area_entered(area):
-#	if faceDirection == "left":
-#		if area.is_in_group("Trash"):
-#			if Input.is_action_pressed("interact"):
-#				area.queue_free()
-#				garbageCounter += 1
-#				print(garbageCounter, faceDirection)
-#
-#func _on_right_area_2d_area_entered(area):
-#	if faceDirection == "right":
-#		if canPickUp:
-#			area.queue_free()
-#			garbageCounter += 1
-#			print(garbageCounter, faceDirection)
-#
-#
-
+	if area.is_in_group("Bin"):
+		bin = null
+		canPushBin = false
