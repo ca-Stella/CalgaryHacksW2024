@@ -3,3 +3,4 @@ res://Scenes/Scripts/Trashbag.gd
 res://Scenes/Sprites/Robot.tscn
 res://Scenes/Sprites/Trashbag.tscn
 res://Scenes/Sprites/Player.tscn
+res://Scenes/Scripts/Player.gd
