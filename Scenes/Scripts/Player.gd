@@ -3,6 +3,25 @@ extends CharacterBody2D
 @export var speed = 100.0 # pixels/sec
 var screenSize
 var garbageCounter = 0
+var totalGarbageCounter = 0 # NEED TO MOVE THIS TO TREE OR STH
+# so that the bins can be the way of updating not player
+
+
+################
+## Move to main_game.gd 
+#
+## in var
+#var paused = false
+#
+## in process
+#if Input.is_action_pressed("ui_cancel"):
+#	get_tree().paused = true
+#	set_physics_process(false)
+#	paused = true
+
+
+###################
+
 var faceDirection
 var canPickUp = false
 var garbage = null
@@ -39,10 +58,11 @@ func _process(delta):
 		if canPickUp:
 			garbage.get_parent().die()
 			garbageCounter += 1
+			totalGarbageCounter += 1
 			print(garbageCounter, faceDirection)
 			canPickUp = false
 		if canPushBin:
-			pass
+			garbageCounter = 0
 	if Input.is_action_just_pressed("push_e"):
 		if canPushBin and !pushingBin:
 			pushingBin = true
