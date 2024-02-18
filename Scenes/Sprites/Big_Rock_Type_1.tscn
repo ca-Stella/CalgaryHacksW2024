@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://dkl0xxjh5g7ix"]
+
+[ext_resource type="Script" path="res://Scenes/Sprites/Big_Rock_Type_1.gd" id="1_mygmc"]
+[ext_resource type="PackedScene" uid="uid://c0dcksk1sa0ah" path="res://Scenes/Big_Rock_Type_1_anim.tscn" id="2_b0lpf"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gcr4e"]
+size = Vector2(37, 38)
+
+[node name="BigRockType1" type="StaticBody2D"]
+script = ExtResource("1_mygmc")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1.5, 14)
+shape = SubResource("RectangleShape2D_gcr4e")
+
+[node name="Big_Rock_Type_1" parent="." instance=ExtResource("2_b0lpf")]

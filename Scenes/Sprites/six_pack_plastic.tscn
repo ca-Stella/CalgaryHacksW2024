@@ -1,17 +1,16 @@
-[gd_scene load_steps=5 format=3 uid="uid://eckcyxmpkb7v"]
+[gd_scene load_steps=5 format=3 uid="uid://boi76u42p46oc"]
 
-[ext_resource type="Script" path="res://Scenes/Scripts/Trashbag.gd" id="1_ue121"]
-[ext_resource type="Texture2D" uid="uid://bpwg621m25l5e" path="res://Assets/Sprites/png/garbagebag.png" id="2_c11ka"]
+[ext_resource type="Script" path="res://Scenes/Scripts/Trashbag.gd" id="1_b3aqr"]
+[ext_resource type="Texture2D" uid="uid://6iksx12wwkqi" path="res://Assets/Sprites/png/6packplastic.png" id="2_cwgc8"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_wkcd2"]
+radius = 6.0
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_4aieq"]
+radius = 6.08276
 
-[node name="Trashbag" type="StaticBody2D" groups=["Trash"]]
-script = ExtResource("1_ue121")
-
-[node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("2_c11ka")
+[node name="Six Pack Plastic" type="StaticBody2D" groups=["Trash"]]
+script = ExtResource("1_b3aqr")
 
 [node name="Area2D" type="Area2D" parent="." groups=["Trash"]]
 
@@ -20,5 +19,9 @@ shape = SubResource("CircleShape2D_wkcd2")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_4aieq")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(2, 3)
+texture = ExtResource("2_cwgc8")
 
 [connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]

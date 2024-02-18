@@ -1,17 +1,17 @@
-[gd_scene load_steps=5 format=3 uid="uid://eckcyxmpkb7v"]
+[gd_scene load_steps=5 format=3 uid="uid://d117514ugc3fe"]
 
-[ext_resource type="Script" path="res://Scenes/Scripts/Trashbag.gd" id="1_ue121"]
-[ext_resource type="Texture2D" uid="uid://bpwg621m25l5e" path="res://Assets/Sprites/png/garbagebag.png" id="2_c11ka"]
+[ext_resource type="Script" path="res://Scenes/Scripts/Trashbag.gd" id="1_s7gri"]
+[ext_resource type="Texture2D" uid="uid://dgj8ifmtfnokl" path="res://Assets/Sprites/png/gameboy.png" id="2_hio7j"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_wkcd2"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_4aieq"]
 
-[node name="Trashbag" type="StaticBody2D" groups=["Trash"]]
-script = ExtResource("1_ue121")
+[node name="GameBoy" type="StaticBody2D" groups=["Trash"]]
+script = ExtResource("1_s7gri")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("2_c11ka")
+texture = ExtResource("2_hio7j")
 
 [node name="Area2D" type="Area2D" parent="." groups=["Trash"]]
 

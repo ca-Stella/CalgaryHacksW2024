@@ -1,0 +1,55 @@
+[gd_scene load_steps=8 format=3 uid="uid://douopko4xmkbq"]
+
+[ext_resource type="Script" path="res://Scenes/Scripts/Trashbag.gd" id="1_hp7yu"]
+[ext_resource type="Texture2D" uid="uid://b8oeusywhhtix" path="res://Assets/Sprites/png/tv-Sheet.png" id="2_vxkgk"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2rpwb"]
+atlas = ExtResource("2_vxkgk")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_be7he"]
+atlas = ExtResource("2_vxkgk")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_yjt7l"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2rpwb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_be7he")
+}],
+"loop": true,
+"name": &"Stage_1",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_wkcd2"]
+radius = 15.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_4aieq"]
+radius = 16.0
+
+[node name="TV" type="StaticBody2D" groups=["Trash"]]
+script = ExtResource("1_hp7yu")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_yjt7l")
+animation = &"Stage_1"
+autoplay = "Stage_1"
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+visible = false
+
+[node name="Area2D" type="Area2D" parent="." groups=["Trash"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-4, -2)
+shape = SubResource("CircleShape2D_wkcd2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-4, -2)
+shape = SubResource("CircleShape2D_4aieq")
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]

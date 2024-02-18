@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://bk4t4win6umfb"]
+
+[ext_resource type="Script" path="res://Scenes/Scripts/Lil_Rock_Type_1.gd" id="1_xw3aw"]
+[ext_resource type="PackedScene" uid="uid://3ev0kidhevb2" path="res://Scenes/Sprites/Lil_Rock_Type_1_anim.tscn" id="2_abaup"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_acylu"]
+size = Vector2(10, 11)
+
+[node name="LilRockType1" type="StaticBody2D"]
+script = ExtResource("1_xw3aw")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 4.5)
+shape = SubResource("RectangleShape2D_acylu")
+
+[node name="Lil_Rock_Type_1" parent="." instance=ExtResource("2_abaup")]
+position = Vector2(11, -11)
+scale = Vector2(0.65625, 0.65625)
