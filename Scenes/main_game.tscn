@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://c8sudf0e8qns8"]
+[gd_scene load_steps=4 format=3 uid="uid://esbdk588xtju"]
 
 [ext_resource type="Script" path="res://Scenes/Scripts/MainGame.gd" id="1_wf522"]
 [ext_resource type="Script" path="res://Scenes/Scripts/HealthBarText.gd" id="2_xtvdl"]

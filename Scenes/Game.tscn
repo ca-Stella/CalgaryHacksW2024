@@ -7,8 +7,8 @@
 [ext_resource type="Texture2D" uid="uid://dgivbkwtoxtt7" path="res://Assets/world/TilesetVillageAbandoned.png" id="3_h1tx3"]
 [ext_resource type="PackedScene" uid="uid://eckcyxmpkb7v" path="res://Scenes/Sprites/Trashbag.tscn" id="3_p7v8t"]
 [ext_resource type="Texture2D" uid="uid://cah601hyxq6tl" path="res://Assets/world/FlagRed16x16.png" id="4_gipoq"]
-[ext_resource type="Texture2D" uid="uid://davp1w8pp8vi3" path="res://Assets/world/Cactus_Sprite_Sheet.png" id="5_qqwqo"]
-[ext_resource type="PackedScene" uid="uid://f4o61ii15qld" path="res://Scenes/Main Tree.tscn" id="6_es8h0"]
+[ext_resource type="Texture2D" path="res://Assets/world/Cactus_Sprite_Sheet.png" id="5_qqwqo"]
+[ext_resource type="PackedScene" path="res://Scenes/Main Tree.tscn" id="6_es8h0"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_pnuyx"]
 texture = ExtResource("1_ngfgs")
