@@ -1,0 +1,81 @@
+[gd_scene load_steps=6 format=3 uid="uid://7dcsv2m8hfgr"]
+
+[ext_resource type="Texture2D" uid="uid://b7gukuqrt6drg" path="res://Assets/Sprites/png/tree-Sheet.png" id="1_cupfo"]
+[ext_resource type="Script" path="res://Scenes/GameWinScreen2.gd" id="1_hu8qr"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_21kiu"]
+atlas = ExtResource("1_cupfo")
+region = Rect2(72, 0, 72, 72)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jdf4x"]
+atlas = ExtResource("1_cupfo")
+region = Rect2(0, 0, 72, 72)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_tolm2"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_21kiu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jdf4x")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="GameWinScreen2" type="CanvasLayer"]
+script = ExtResource("1_hu8qr")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(1, 1, 1, 0.701961)
+
+[node name="MarginContainer" type="MarginContainer" parent="ColorRect"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ColorRect/MarginContainer"]
+custom_minimum_size = Vector2(160, 0)
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_constants/separation = 24
+
+[node name="Label" type="Label" parent="ColorRect/MarginContainer/VBoxContainer"]
+texture_filter = 1
+layout_mode = 2
+text = "Congratulations
+You won! "
+horizontal_alignment = 1
+
+[node name="RestartButton" type="Button" parent="ColorRect/MarginContainer/VBoxContainer"]
+texture_filter = 2
+layout_mode = 2
+text = "RESTART"
+
+[node name="QuitButton" type="Button" parent="ColorRect/MarginContainer/VBoxContainer"]
+texture_filter = 2
+layout_mode = 2
+text = "QUIT"
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="ColorRect/MarginContainer/VBoxContainer"]
+sprite_frames = SubResource("SpriteFrames_tolm2")
+autoplay = "default"
+
+[connection signal="button_up" from="ColorRect/MarginContainer/VBoxContainer/RestartButton" to="." method="_on_restart_button_button_up"]
+[connection signal="button_up" from="ColorRect/MarginContainer/VBoxContainer/QuitButton" to="." method="_on_quit_button_button_up"]

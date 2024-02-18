@@ -83,19 +83,25 @@ texture = SubResource("AnimatedTexture_pcufd")
 stretch_mode = 2
 script = ExtResource("10_3nps0")
 
-[node name="MarginContainer2" type="MarginContainer" parent="CanvasLayer/MarginContainer/HBoxContainer"]
+[node name="Timer" type="MarginContainer" parent="CanvasLayer/MarginContainer/HBoxContainer"]
 custom_minimum_size = Vector2(80, 0)
 layout_mode = 2
 
-[node name="Timer" type="TextureRect" parent="CanvasLayer/MarginContainer/HBoxContainer/MarginContainer2"]
+[node name="TimerTexture" type="TextureRect" parent="CanvasLayer/MarginContainer/HBoxContainer/Timer"]
 layout_mode = 2
 texture = SubResource("AnimatedTexture_fjr8a")
+
+[node name="TimerLabel" type="Label" parent="CanvasLayer/MarginContainer/HBoxContainer/Timer"]
+texture_filter = 2
+layout_mode = 2
+size_flags_horizontal = 4
+text = "00:00"
 
 [node name="TextureProgressBar" type="TextureProgressBar" parent="CanvasLayer/MarginContainer/HBoxContainer"]
 custom_minimum_size = Vector2(100, 0)
 layout_mode = 2
-texture_under = ExtResource("14_r7wul")
 texture_over = ExtResource("10_e10yo")
+texture_progress = ExtResource("14_r7wul")
 script = ExtResource("14_rhcem")
 
 [connection signal="value_changed" from="CanvasLayer/MarginContainer/HBoxContainer/TextureProgressBar" to="CanvasLayer/MarginContainer/HBoxContainer/TextureProgressBar" method="_on_value_changed"]

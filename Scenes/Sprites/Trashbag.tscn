@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://bpwg621m25l5e" path="res://Assets/Sprites/png/garbagebag.png" id="2_c11ka"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_wkcd2"]
+radius = 11.0
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_4aieq"]
 

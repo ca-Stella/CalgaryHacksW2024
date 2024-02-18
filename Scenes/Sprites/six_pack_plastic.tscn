@@ -4,10 +4,10 @@
 [ext_resource type="Texture2D" uid="uid://6iksx12wwkqi" path="res://Assets/Sprites/png/6packplastic.png" id="2_cwgc8"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_wkcd2"]
-radius = 6.0
+radius = 8.0
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_4aieq"]
-radius = 6.08276
+radius = 4.0
 
 [node name="Six Pack Plastic" type="StaticBody2D" groups=["Trash"]]
 script = ExtResource("1_b3aqr")

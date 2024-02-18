@@ -1,12 +1,12 @@
-[gd_scene load_steps=4 format=3 uid="uid://nk8mxwhrofb8"]
+[gd_scene load_steps=4 format=3 uid="uid://iny7wklqq2vq"]
 
 [ext_resource type="Texture2D" uid="uid://b86im1j7rjydo" path="res://Assets/Sprites/png/garbage_recycling.png" id="1_01q0m"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_t2a4q"]
-size = Vector2(35, 36)
+size = Vector2(37, 36)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_anr3v"]
-size = Vector2(31, 32)
+size = Vector2(19, 28)
 
 [node name="RecycleBin" type="CharacterBody2D" groups=["Bin"]]
 
@@ -20,5 +20,5 @@ position = Vector2(-0.5, 0)
 shape = SubResource("RectangleShape2D_t2a4q")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-0.5, 0)
+position = Vector2(-1.5, 0)
 shape = SubResource("RectangleShape2D_anr3v")

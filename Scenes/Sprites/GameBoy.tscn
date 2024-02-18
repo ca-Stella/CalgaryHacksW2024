@@ -3,9 +3,11 @@
 [ext_resource type="Script" path="res://Scenes/Scripts/Trashbag.gd" id="1_s7gri"]
 [ext_resource type="Texture2D" uid="uid://dgj8ifmtfnokl" path="res://Assets/Sprites/png/gameboy.png" id="2_hio7j"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_wkcd2"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xrqq8"]
+size = Vector2(19, 20)
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_4aieq"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rnxe7"]
+size = Vector2(12, 16)
 
 [node name="GameBoy" type="StaticBody2D" groups=["Trash"]]
 script = ExtResource("1_s7gri")
@@ -16,9 +18,11 @@ texture = ExtResource("2_hio7j")
 [node name="Area2D" type="Area2D" parent="." groups=["Trash"]]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-shape = SubResource("CircleShape2D_wkcd2")
+position = Vector2(-0.5, 0)
+shape = SubResource("RectangleShape2D_xrqq8")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("CircleShape2D_4aieq")
+position = Vector2(-1, 0)
+shape = SubResource("RectangleShape2D_rnxe7")
 
 [connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]

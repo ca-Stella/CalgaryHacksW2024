@@ -26,10 +26,9 @@ animations = [{
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_wkcd2"]
-radius = 15.0
+radius = 20.0
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_4aieq"]
-radius = 16.0
 
 [node name="TV" type="StaticBody2D" groups=["Trash"]]
 script = ExtResource("1_hp7yu")

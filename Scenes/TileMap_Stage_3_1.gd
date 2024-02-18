@@ -14,7 +14,7 @@ func _process(delta):
 
 	health = get_parent().get_parent().mainHealth
 	
-	if(health > 40 && health < 60):
+	if(health > 75 && health <= 80):
 		tile_map.show()
 	
 	pass

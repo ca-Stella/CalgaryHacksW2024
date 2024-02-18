@@ -8,8 +8,10 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	self.value = ((get_parent().get_parent().get_parent().get_parent().get_parent().mainHealth))/100
-	print("value = ", self.value)
+	self.value = ((get_parent().get_parent().get_parent().get_parent().get_parent().mainHealth))
+	if self.value == 0:
+		get_parent().get_parent().get_parent().get_parent().get_parent().game_over()
+#	print("value = ", self.value)
 
 func _on_value_changed(value):
 	pass

@@ -24,9 +24,7 @@ func _process(delta):
 
 
 func _on_restart_button_button_up():
-	pass # Replace with function body. UHOH
-
-
+	get_tree().reload_current_scene()
 
 
 func _on_resume_button_button_up():
