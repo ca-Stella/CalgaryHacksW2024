@@ -1,5 +1,6 @@
 ea4bc82a6ad023ab7ee23ee620429895
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 ::res://::1708255035
 icon.svg::CompressedTexture2D::8307733130991223606::1708209070::1708209070::1::::<><>::
 ::res://Assets/::1708255018
@@ -25,10 +26,16 @@ timer1.png::CompressedTexture2D::992647177937567854::1708254885::1708254888::1::
 timer2.png::CompressedTexture2D::4436531531655015561::1708254885::1708254888::1::::<><>::
 timer3.png::CompressedTexture2D::2774210791146025633::1708254885::1708254888::1::::<><>::
 >>>>>>> Stashed changes
+=======
+::res://::1708255418
+icon.svg::CompressedTexture2D::8307733130991223606::1708209070::1708209070::1::::<><>::
+::res://Assets/::1708255404
+>>>>>>> Stashed changes
 ::res://Assets/Sprites/::1708237171
 player_tmp.png::CompressedTexture2D::6934251779614768993::1708211383::1708211383::1::::<><>::
 robot_1_animated-Sheet.png::CompressedTexture2D::7159929544191301583::1708216226::1708209070::1::::<><>::
 trash.png::CompressedTexture2D::6216849290402317089::1708209070::1708209070::1::::<><>::
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 ::res://Assets/Sprites/png/::1708255018
 6packplastic.png::CompressedTexture2D::2193009738488435648::1708234181::1708234187::1::::<><>::
@@ -40,15 +47,25 @@ bigrock_animate-Sheet.png::CompressedTexture2D::3204938475109455488::1708237171:
 biggerrock_animated-Sheet.png::CompressedTexture2D::4609356965186126277::1708237171::1708254885::1::::<><>::
 bigrock_animate-Sheet.png::CompressedTexture2D::3204938475109455488::1708237171::1708254885::1::::<><>::
 >>>>>>> Stashed changes
+=======
+::res://Assets/Sprites/png/::1708255404
+6packplastic.png::CompressedTexture2D::2193009738488435648::1708234181::1708234187::1::::<><>::
+biggerrock_animated-Sheet.png::CompressedTexture2D::4609356965186126277::1708237171::1708255404::1::::<><>::
+bigrock_animate-Sheet.png::CompressedTexture2D::3204938475109455488::1708237171::1708255404::1::::<><>::
+>>>>>>> Stashed changes
 bob-Sheet.png::CompressedTexture2D::3629569626977984495::1708234181::1708234187::1::::<><>::
 gameboy.png::CompressedTexture2D::7600992741831453871::1708234181::1708234187::1::::<><>::
 garbage.png::CompressedTexture2D::6082828570839524114::1708234181::1708234187::1::::<><>::
 garbagebag.png::CompressedTexture2D::3485090769298420172::1708234181::1708234187::1::::<><>::
 garbage_recycling.png::CompressedTexture2D::4767156780580389612::1708234181::1708234187::1::::<><>::
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 lilrock_animated-Sheet.png::CompressedTexture2D::2324705246552105207::1708237171::1708255018::1::::<><>::
 =======
 lilrock_animated-Sheet.png::CompressedTexture2D::2324705246552105207::1708237171::1708254885::1::::<><>::
+>>>>>>> Stashed changes
+=======
+lilrock_animated-Sheet.png::CompressedTexture2D::2324705246552105207::1708237171::1708255404::1::::<><>::
 >>>>>>> Stashed changes
 popcan.png::CompressedTexture2D::3990930508999772158::1708234181::1708234187::1::::<><>::
 progressBar.png::CompressedTexture2D::4984474780065454670::1708254885::1708254888::1::::<><>::
@@ -61,6 +78,7 @@ FlagRed16x16.png::CompressedTexture2D::4789220260830589245::1708214904::17082149
 TilesetFloor.png::CompressedTexture2D::9006992917905448353::1708212682::1708212682::1::::<><>::
 TilesetNature.png::CompressedTexture2D::3911304140939329763::1708212694::1708212694::1::::<><>::
 TilesetVillageAbandoned.png::CompressedTexture2D::7598187537684083306::1708214575::1708214575::1::::<><>::
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 ::res://Scenes/::1708255018
 Big_Rock_Type_1.tscn::PackedScene::9155005790824020607::1708248583::0::1::::<><>::res://Scenes/Scripts/Big_Rock_Type_1.gd<>uid://c0dcksk1sa0ah::::res://Scenes/Big_Rock_Type_1_anim.tscn
@@ -80,22 +98,43 @@ main_game.tscn::PackedScene::317980821621714938::1708253658::0::1::::<><>::res:/
 PauseScreen.tscn::PackedScene::-1::1708254885::0::1::::<><>::
 StatusBar.tscn::PackedScene::-1::1708254885::0::1::::<><>::
 >>>>>>> Stashed changes
+=======
+::res://Scenes/::1708255404
+Big_Rock_Type_1.tscn::PackedScene::9155005790824020607::1708255213::0::1::::<><>::res://Scenes/Scripts/Big_Rock_Type_1.gd<>uid://c0dcksk1sa0ah::::res://Scenes/Big_Rock_Type_1_anim.tscn
+Big_Rock_Type_1_anim.tscn::PackedScene::6533895845597523659::1708255213::0::1::::<><>::uid://blwq4r6csjio3::::res://Assets/Sprites/png/bigrock_animate-Sheet.png
+Game.tscn::PackedScene::38575118507386196::1708255404::0::1::::<><>::uid://d1lb4fga5yxbd::::res://Assets/world/TilesetFloor.png<>uid://16odar3pibnb::::res://Scenes/Sprites/Player.tscn<>uid://ctdy2xymqayr5::::res://Scenes/Sprites/Robot.tscn<>uid://bvywuwtdwly6n::::res://Assets/world/TilesetNature.png<>uid://dgivbkwtoxtt7::::res://Assets/world/TilesetVillageAbandoned.png<>uid://eckcyxmpkb7v::::res://Scenes/Sprites/Trashbag.tscn<>uid://cah601hyxq6tl::::res://Assets/world/FlagRed16x16.png<>uid://davp1w8pp8vi3::::res://Assets/world/Cactus_Sprite_Sheet.png<>uid://b8oeusywhhtix::::res://Assets/Sprites/png/tv-Sheet.png<>uid://f4o61ii15qld::::res://Scenes/Main Tree.tscn<>res://Scenes/TileMap_Stage_1.gd<>res://Scenes/TileMap_Stage_1_1.gd<>res://Scenes/TileMap_Stage_3_1.gd<>res://Scenes/TileMap_Stage_4_1.gd<>uid://d3o0uwvo1hcip::::res://Scenes/Big_Rock_Type_1.tscn<>uid://22g7bxvra40d::::res://Scenes/Sprites/Big_Rock_Type_2.tscn<>uid://bk4t4win6umfb::::res://Scenes/Sprites/Lil_Rock_Type_1.tscn<>uid://douopko4xmkbq::::res://Scenes/Sprites/TV.tscn<>uid://c7o5uw45esu3a::::res://Scenes/Sprites/Can.tscn<>uid://boi76u42p46oc::::res://Scenes/Sprites/six_pack_plastic.tscn<>uid://d117514ugc3fe::::res://Scenes/Sprites/GameBoy.tscn
+Main Tree Anim.tscn::PackedScene::6998397921570633181::1708254876::0::1::::<><>::uid://b7gukuqrt6drg::::res://Assets/Sprites/png/tree-Sheet.png
+Main Tree.tscn::PackedScene::411717948932642889::1708255213::0::1::::<><>::uid://c6ycudsbq03af::::res://Scenes/Main Tree Anim.tscn
+main_game.tscn::PackedScene::317980821621714938::1708253658::0::1::::<><>::res://Scenes/Scripts/MainGame.gd<>res://Scenes/Scripts/HealthBarText.gd<>uid://sxldrl2dlyq::::res://Scenes/Game.tscn
+>>>>>>> Stashed changes
 TileMap_Stage_1.gd::GDScript::-1::1708254876::0::1::::<>TileMap<>::
 TileMap_Stage_1_1.gd::GDScript::-1::1708254876::0::1::::<>TileMap<>::
 TileMap_Stage_3_1.gd::GDScript::-1::1708254876::0::1::::<>TileMap<>::
 TileMap_Stage_4_1.gd::GDScript::-1::1708254876::0::1::::<>TileMap<>::
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 ::res://Scenes/Scripts/::1708255018
+=======
+::res://Scenes/Scripts/::1708255404
+>>>>>>> Stashed changes
 Big_Rock_Type_1.gd::GDScript::-1::1708254876::0::1::::<>StaticBody2D<>::
 Big_Rock_Type_2.gd::GDScript::-1::1708254876::0::1::::<>StaticBody2D<>::
 HealthBarText.gd::GDScript::-1::1708234924::0::1::::<>TextEdit<>::
 Lil_Rock_Type_1.gd::GDScript::-1::1708254876::0::1::::<>StaticBody2D<>::
 MainGame.gd::GDScript::-1::1708234924::0::1::::<>Control<>::
+<<<<<<< Updated upstream
 Player.gd::GDScript::-1::1708255018::0::1::::<>CharacterBody2D<>::
 Robot.gd::GDScript::-1::1708211383::0::1::::<>CharacterBody2D<>::
 Timer.gd::GDScript::-1::1708254876::0::1::::<>Timer<>::
 Trashbag.gd::GDScript::-1::1708216555::0::1::::<>StaticBody2D<>::
 ::res://Scenes/Sprites/::1708255018
+=======
+Player.gd::GDScript::-1::1708255404::0::1::::<>CharacterBody2D<>::
+Robot.gd::GDScript::-1::1708211383::0::1::::<>CharacterBody2D<>::
+Timer.gd::GDScript::-1::1708254876::0::1::::<>Timer<>::
+Trashbag.gd::GDScript::-1::1708216555::0::1::::<>StaticBody2D<>::
+::res://Scenes/Sprites/::1708255404
+>>>>>>> Stashed changes
 Big_Rock_Type_1.gd::GDScript::-1::1708239702::0::1::::<>StaticBody2D<>::
 Big_Rock_Type_1.tscn::PackedScene::7885418863131962967::1708239760::0::1::::<><>::res://Scenes/Sprites/Big_Rock_Type_1.gd<>uid://c0dcksk1sa0ah::::res://Scenes/Big_Rock_Type_1_anim.tscn
 Big_Rock_Type_2.tscn::PackedScene::1951258513978791481::1708254876::0::1::::<><>::uid://chw1uatb7gwms::::res://Scenes/Sprites/Big_Rock_Type_2_anim.tscn<>res://Scenes/Scripts/Big_Rock_Type_2.gd
@@ -104,6 +143,7 @@ Can.tscn::PackedScene::7049644079703337944::1708254876::0::1::::<><>::res://Scen
 GameBoy.tscn::PackedScene::9039843736182642510::1708254876::0::1::::<><>::res://Scenes/Scripts/Trashbag.gd<>uid://dgj8ifmtfnokl::::res://Assets/Sprites/png/gameboy.png
 Lil_Rock_Type_1.tscn::PackedScene::3149382654331988747::1708254876::0::1::::<><>::res://Scenes/Scripts/Lil_Rock_Type_1.gd<>uid://3ev0kidhevb2::::res://Scenes/Sprites/Lil_Rock_Type_1_anim.tscn
 Lil_Rock_Type_1_anim.tscn::PackedScene::1974865372314642945::1708254876::0::1::::<><>::uid://8eds5p4qqbtn::::res://Assets/Sprites/png/lilrock_animated-Sheet.png
+<<<<<<< Updated upstream
 Player.tscn::PackedScene::1889761067799368239::1708255018::0::1::::<><>::uid://c52ad4o86135v::::res://Assets/Sprites/player_tmp.png<>res://Scenes/Scripts/Player.gd
 Robot.tscn::PackedScene::6114129199711818176::1708225940::0::1::::<><>::uid://daak81rctk83t::::res://Assets/Sprites/robot_1_animated-Sheet.png<>res://Scenes/Scripts/Robot.gd
 six_pack_plastic.tscn::PackedScene::3387578916551919826::1708254876::0::1::::<><>::res://Scenes/Scripts/Trashbag.gd<>uid://6iksx12wwkqi::::res://Assets/Sprites/png/6packplastic.png
@@ -140,4 +180,11 @@ Robot.tscn::PackedScene::6114129199711818176::1708225940::0::1::::<><>::uid://da
 six_pack_plastic.tscn::PackedScene::-1::1708254876::0::1::::<><>::
 Trashbag.tscn::PackedScene::285496168232293977::1708254876::0::1::::<><>::res://Scenes/Scripts/Trashbag.gd<>uid://daak81rctk83t::::res://Assets/Sprites/robot_1_animated-Sheet.png
 TV.tscn::PackedScene::-1::1708254876::0::1::::<><>::
+>>>>>>> Stashed changes
+=======
+Player.tscn::PackedScene::1889761067799368239::1708255404::0::1::::<><>::uid://c52ad4o86135v::::res://Assets/Sprites/player_tmp.png<>res://Scenes/Scripts/Player.gd
+Robot.tscn::PackedScene::6114129199711818176::1708225940::0::1::::<><>::uid://daak81rctk83t::::res://Assets/Sprites/robot_1_animated-Sheet.png<>res://Scenes/Scripts/Robot.gd
+six_pack_plastic.tscn::PackedScene::3387578916551919826::1708254876::0::1::::<><>::res://Scenes/Scripts/Trashbag.gd<>uid://6iksx12wwkqi::::res://Assets/Sprites/png/6packplastic.png
+Trashbag.tscn::PackedScene::285496168232293977::1708255213::0::1::::<><>::res://Scenes/Scripts/Trashbag.gd<>uid://bpwg621m25l5e::::res://Assets/Sprites/png/garbagebag.png
+TV.tscn::PackedScene::8184070790109865546::1708254876::0::1::::<><>::res://Scenes/Scripts/Trashbag.gd<>uid://b8oeusywhhtix::::res://Assets/Sprites/png/tv-Sheet.png
 >>>>>>> Stashed changes

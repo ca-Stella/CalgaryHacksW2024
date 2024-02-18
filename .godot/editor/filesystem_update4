@@ -1,4 +1,6 @@
+res://Scenes/main_game.tscn
 res://Scenes/Big_Rock_Type_1.tscn
-res://Scenes/Big_Rock_Type_1_anim.tscn
 res://Scenes/Main Tree.tscn
+res://Scenes/Game.tscn
+res://Scenes/Big_Rock_Type_1_anim.tscn
 res://Scenes/Sprites/Trashbag.tscn
