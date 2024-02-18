@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://16odar3pibnb"]
+[gd_scene load_steps=9 format=3 uid="uid://16odar3pibnb"]
 
 [ext_resource type="Texture2D" uid="uid://c52ad4o86135v" path="res://Assets/Sprites/player_tmp.png" id="1_0g12c"]
 [ext_resource type="Script" path="res://Scenes/Scripts/Player.gd" id="1_8son2"]
@@ -8,6 +8,18 @@ size = Vector2(18, 19)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ur2gp"]
 size = Vector2(16, 17)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0t7jl"]
+size = Vector2(5, 5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_b4wk6"]
+size = Vector2(5, 5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_a4brc"]
+size = Vector2(5, 5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_w1pay"]
+size = Vector2(5, 5)
 
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_8son2")
@@ -25,4 +37,37 @@ shape = SubResource("RectangleShape2D_ur2gp")
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_0g12c")
 
+[node name="TopArea2D" type="Area2D" parent="."]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TopArea2D"]
+position = Vector2(0, -9)
+shape = SubResource("RectangleShape2D_0t7jl")
+
+[node name="DownArea2D" type="Area2D" parent="."]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DownArea2D"]
+position = Vector2(0, 10)
+shape = SubResource("RectangleShape2D_b4wk6")
+
+[node name="LeftArea2D" type="Area2D" parent="."]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LeftArea2D"]
+position = Vector2(-9, 0)
+shape = SubResource("RectangleShape2D_a4brc")
+
+[node name="RightArea2D" type="Area2D" parent="."]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RightArea2D"]
+position = Vector2(9, 0)
+shape = SubResource("RectangleShape2D_w1pay")
+
 [connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
+[connection signal="area_exited" from="Area2D" to="." method="_on_area_2d_area_exited"]
+[connection signal="area_entered" from="TopArea2D" to="." method="_on_top_area_2d_area_entered"]
+[connection signal="area_entered" from="DownArea2D" to="." method="_on_down_area_2d_area_entered"]
+[connection signal="area_entered" from="LeftArea2D" to="." method="_on_left_area_2d_area_entered"]
+[connection signal="area_entered" from="RightArea2D" to="." method="_on_right_area_2d_area_entered"]
