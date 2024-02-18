@@ -1,23 +1,4 @@
-res://Scenes/main_game.tscn
 res://Scenes/Big_Rock_Type_1.tscn
-res://Scenes/Main Tree.tscn
-res://Scenes/Game.tscn
 res://Scenes/Big_Rock_Type_1_anim.tscn
+res://Scenes/Main Tree.tscn
 res://Scenes/Sprites/Trashbag.tscn
-res://Scenes/Scripts/Big_Rock_Type_1.gd
-res://Scenes/Main Tree Anim.tscn
-res://Scenes/Big_Rock_Type_2_anim.tscn
-res://Scenes/Sprites/Big_Rock_Type_2.tscn
-res://Scenes/Sprites/Big_Rock_Type_2_anim.tscn
-res://Scenes/Scripts/Big_Rock_Type_2.gd
-res://Scenes/Sprites/Lil_Rock_Type_1_anim.tscn
-res://Scenes/Sprites/Lil_Rock_Type_1.tscn
-res://Scenes/Sprites/Lil_Rock_Type_1.gd
-res://Scenes/Sprites/TV.tscn
-res://Scenes/Sprites/Can.tscn
-res://Scenes/Sprites/six_pack_plastic.tscn
-res://Scenes/Sprites/GameBoy.tscn
-res://Scenes/TileMap_Stage_1.gd
-res://Scenes/TileMap_Stage_1_1.gd
-res://Scenes/TileMap_Stage_3_1.gd
-res://Scenes/TileMap_Stage_4_1.gd
