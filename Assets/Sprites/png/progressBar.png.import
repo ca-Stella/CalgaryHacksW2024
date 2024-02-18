@@ -2,20 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-
-uid="uid://5t8pk8nai4fw"
-
-uid="uid://b6w2o207avrij"
-
-path="res://.godot/imported/biggerrock_animated-Sheet.png-cd3fa961dd145ac871bb08debf6014b1.ctex"
+uid="uid://cdartor10p6ri"
+path="res://.godot/imported/progressBar.png-0fe972c840272da2cd965001a84f5b89.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/png/biggerrock_animated-Sheet.png"
-dest_files=["res://.godot/imported/biggerrock_animated-Sheet.png-cd3fa961dd145ac871bb08debf6014b1.ctex"]
+source_file="res://Assets/Sprites/png/progressBar.png"
+dest_files=["res://.godot/imported/progressBar.png-0fe972c840272da2cd965001a84f5b89.ctex"]
 
 [params]
 

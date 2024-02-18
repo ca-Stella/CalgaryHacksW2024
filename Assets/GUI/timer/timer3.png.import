@@ -2,20 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-
-uid="uid://5t8pk8nai4fw"
-
-uid="uid://b6w2o207avrij"
-
-path="res://.godot/imported/biggerrock_animated-Sheet.png-cd3fa961dd145ac871bb08debf6014b1.ctex"
+uid="uid://bfr331pobi2oj"
+path="res://.godot/imported/timer3.png-40360b5b99f8b9c7acf3093e2f43d592.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/png/biggerrock_animated-Sheet.png"
-dest_files=["res://.godot/imported/biggerrock_animated-Sheet.png-cd3fa961dd145ac871bb08debf6014b1.ctex"]
+source_file="res://Assets/GUI/timer/timer3.png"
+dest_files=["res://.godot/imported/timer3.png-40360b5b99f8b9c7acf3093e2f43d592.ctex"]
 
 [params]
 

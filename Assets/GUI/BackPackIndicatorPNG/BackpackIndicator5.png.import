@@ -2,20 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-
-uid="uid://5t8pk8nai4fw"
-
-uid="uid://b6w2o207avrij"
-
-path="res://.godot/imported/biggerrock_animated-Sheet.png-cd3fa961dd145ac871bb08debf6014b1.ctex"
+uid="uid://cdph3vqdbewd7"
+path="res://.godot/imported/BackpackIndicator5.png-bae968ed6d1ca0c5cc63b5dff387fdee.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/png/biggerrock_animated-Sheet.png"
-dest_files=["res://.godot/imported/biggerrock_animated-Sheet.png-cd3fa961dd145ac871bb08debf6014b1.ctex"]
+source_file="res://Assets/GUI/BackPackIndicatorPNG/BackpackIndicator5.png"
+dest_files=["res://.godot/imported/BackpackIndicator5.png-bae968ed6d1ca0c5cc63b5dff387fdee.ctex"]
 
 [params]
 
