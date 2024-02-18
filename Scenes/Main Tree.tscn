@@ -1,13 +1,39 @@
 [gd_scene load_steps=4 format=3 uid="uid://f4o61ii15qld"]
 
-[ext_resource type="Script" path="res://Scenes/Scripts/MainTree_Stat Body.gd" id="1_i1y7r"]
 [ext_resource type="PackedScene" uid="uid://c6ycudsbq03af" path="res://Scenes/Main Tree Anim.tscn" id="2_b1801"]
+
+[sub_resource type="GDScript" id="GDScript_y7eko"]
+script/source = "extends StaticBody2D
+
+@onready var animation = $MasterTreeV2
+var health 
+
+func _ready():
+	animation = $MasterTreeV2
+	pass
+
+
+func _process(delta):
+	health = get_parent().get_parent().mainHealth
+	
+	#MAIN TREE
+	
+	if (health > 90):
+		animation.play(\"Stage_1\")
+	elif (health > 76):
+		animation.play(\"Stage_2\")
+	elif(health > 51):
+		animation.play(\"Stage_3\")
+	elif(health > 0): 
+		animation.play(\"Stage_4\")
+		
+"
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7r16j"]
 size = Vector2(48, 52)
 
 [node name="Main Tree" type="StaticBody2D"]
-script = ExtResource("1_i1y7r")
+script = SubResource("GDScript_y7eko")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-1, -3)
