@@ -37,6 +37,7 @@ func _process(delta):
 			garbage.get_parent().die()
 			garbageCounter += 1
 			print(garbageCounter, faceDirection)
+			canPickUp = false
 
 	# if we have a movement vector, move based on speed and play animation
 	if velocity.length() > 0: 
