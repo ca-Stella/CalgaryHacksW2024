@@ -13,10 +13,11 @@ var garbage = null
 var canPushBin = false
 var bin = null
 var pushingBin = false
+var animatedSprite
 
 func _ready(): 
 	screenSize = get_viewport_rect().size
-	pass
+	animatedSprite = $AnimatedSprite2D
 
 func _process(delta):
 	var velocity = Vector2.ZERO # player's movement vector
@@ -24,30 +25,29 @@ func _process(delta):
 	if Input.is_action_pressed("move_right"):
 		velocity.x += 1
 		faceDirection = "right"
-		# animatedSprite.flip_h = false
-		# animatedSprite.play("sideways")
+		animatedSprite.play("RightWalk")
 	if Input.is_action_pressed("move_left"):
 		velocity.x -= 1	
 		faceDirection = "left"
-#		animatedSprite.flip_h = true
-#		animatedSprite.play("sideways")
+		animatedSprite.play("LeftWalk")
 	if Input.is_action_pressed("move_down"):
 		velocity.y += 1	
 		faceDirection = "down"
-#		animatedSprite.play("forward")
+		animatedSprite.play("ForwardWalk")
 	if Input.is_action_pressed("move_up"):
 		velocity.y -= 1	
 		faceDirection = "up"
-#		animatedSprite.play("backward")
+		animatedSprite.play("BackwardWalk")
 	if Input.is_action_pressed("interact"):
 		if canPickUp:
 			garbage.get_parent().die()
 			garbageCounter += 1
 			totalGarbageCounter += 1
-			print(garbageCounter, faceDirection)
+			# print(garbageCounter, faceDirection)
 			canPickUp = false
 		if canPushBin:
 			garbageCounter = 0
+			get_parent().get_parent().mainHealth -= (garbageCounter * 5)
 	if Input.is_action_just_pressed("push_e"):
 		if canPushBin and !pushingBin:
 			pushingBin = true
@@ -55,10 +55,8 @@ func _process(delta):
 			pushingBin = false
 		if !canPushBin:
 			pushingBin = false
-		print(canPushBin, pushingBin)
-				
-	
-	print(canPickUp)
+#		print(canPushBin, pushingBin)
+#	print(canPickUp)
 
 	if pushingBin and canPushBin:
 		bin.get_parent().move(velocity, speed, delta)

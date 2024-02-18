@@ -1,11 +1,12 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1708258121
+::res://::1708260858
 icon.svg::CompressedTexture2D::8307733130991223606::1708198411::1708198422::1::::<><>::
-::res://Assets/::1708257967
-::res://Assets/GUI/::1708257967
+::res://Assets/::1708260858
+::res://Assets/GUI/::1708260858
 BackpackIndicator-Sheet.png::CompressedTexture2D::2901084174217588534::1708257414::1708258122::1::::<><>::
 progressBar.png::CompressedTexture2D::6004058011432457180::1708257414::1708258122::1::::<><>::
-::res://Assets/GUI/BackPackIndicatorPNG/::1708257967
+progressBar_full.png::CompressedTexture2D::1513177743632218395::1708260856::1708260859::1::::<><>::
+::res://Assets/GUI/BackPackIndicatorPNG/::1708258122
 BackpackIndicator1.png::CompressedTexture2D::2276278505029369702::1708257414::1708258122::1::::<><>::
 BackpackIndicator2.png::CompressedTexture2D::6002575791735858121::1708257414::1708258122::1::::<><>::
 BackpackIndicator3.png::CompressedTexture2D::2018227646537517737::1708257414::1708258122::1::::<><>::
@@ -15,7 +16,7 @@ BackpackIndicator6.png::CompressedTexture2D::2585114370800026386::1708257414::17
 BackpackIndicator7.png::CompressedTexture2D::5813845335446989720::1708257414::1708258122::1::::<><>::
 BackpackIndicator8.png::CompressedTexture2D::8178009261074699418::1708257414::1708258122::1::::<><>::
 BackpackIndicator9.png::CompressedTexture2D::2112591237085310380::1708257414::1708258122::1::::<><>::
-::res://Assets/GUI/timer/::1708257967
+::res://Assets/GUI/timer/::1708258122
 timer1.png::CompressedTexture2D::992647177937567854::1708257414::1708258122::1::::<><>::
 timer2.png::CompressedTexture2D::4436531531655015561::1708257414::1708258122::1::::<><>::
 timer3.png::CompressedTexture2D::2774210791146025633::1708257414::1708258122::1::::<><>::
@@ -43,44 +44,47 @@ FlagRed16x16.png::CompressedTexture2D::4789220260830589245::1708216512::17082165
 TilesetFloor.png::CompressedTexture2D::9006992917905448353::1708216512::1708216512::1::::<><>::
 TilesetNature.png::CompressedTexture2D::3911304140939329763::1708216512::1708216512::1::::<><>::
 TilesetVillageAbandoned.png::CompressedTexture2D::7598187537684083306::1708216512::1708216512::1::::<><>::
-::res://Scenes/::1708258121
+::res://Scenes/::1708260703
 Big_Rock_Type_1.tscn::PackedScene::9155005790824020607::1708257749::0::1::::<><>::res://Scenes/Scripts/Big_Rock_Type_1.gd<>uid://c0dcksk1sa0ah::::res://Scenes/Big_Rock_Type_1_anim.tscn
 Big_Rock_Type_1_anim.tscn::PackedScene::6533895845597523659::1708257749::0::1::::<><>::uid://blwq4r6csjio3::::res://Assets/Sprites/png/bigrock_animate-Sheet.png
-Game.tscn::PackedScene::38575118507386196::1708257841::0::1::::<><>::uid://d1lb4fga5yxbd::::res://Assets/world/TilesetFloor.png<>uid://16odar3pibnb::::res://Scenes/Sprites/Player.tscn<>uid://ctdy2xymqayr5::::res://Scenes/Sprites/Robot.tscn<>uid://bvywuwtdwly6n::::res://Assets/world/TilesetNature.png<>uid://dgivbkwtoxtt7::::res://Assets/world/TilesetVillageAbandoned.png<>uid://eckcyxmpkb7v::::res://Scenes/Sprites/Trashbag.tscn<>uid://cah601hyxq6tl::::res://Assets/world/FlagRed16x16.png<>uid://davp1w8pp8vi3::::res://Assets/world/Cactus_Sprite_Sheet.png<>uid://b8oeusywhhtix::::res://Assets/Sprites/png/tv-Sheet.png<>uid://f4o61ii15qld::::res://Scenes/Main Tree.tscn<>res://Scenes/TileMap_Stage_1.gd<>res://Scenes/TileMap_Stage_1_1.gd<>res://Scenes/TileMap_Stage_3_1.gd<>res://Scenes/TileMap_Stage_4_1.gd<>uid://d3o0uwvo1hcip::::res://Scenes/Big_Rock_Type_1.tscn<>uid://22g7bxvra40d::::res://Scenes/Sprites/Big_Rock_Type_2.tscn<>uid://bk4t4win6umfb::::res://Scenes/Sprites/Lil_Rock_Type_1.tscn<>uid://douopko4xmkbq::::res://Scenes/Sprites/TV.tscn<>uid://c7o5uw45esu3a::::res://Scenes/Sprites/Can.tscn<>uid://boi76u42p46oc::::res://Scenes/Sprites/six_pack_plastic.tscn<>uid://d117514ugc3fe::::res://Scenes/Sprites/GameBoy.tscn
-Main Tree Anim.tscn::PackedScene::6998397921570633181::1708257749::0::1::::<><>::uid://b7gukuqrt6drg::::res://Assets/Sprites/png/tree-Sheet.png
-Main Tree.tscn::PackedScene::411717948932642889::1708257749::0::1::::<><>::uid://c6ycudsbq03af::::res://Scenes/Main Tree Anim.tscn
-main_game.tscn::PackedScene::317980821621714938::1708257280::0::1::::<><>::res://Scenes/Scripts/MainGame.gd<>res://Scenes/Scripts/HealthBarText.gd<>uid://sxldrl2dlyq::::res://Scenes/Game.tscn
-PauseScreen.tscn::PackedScene::-1::1708257613::0::1::::<><>::
-StatusBar.tscn::PackedScene::-1::1708257613::0::1::::<><>::
+Game.tscn::PackedScene::38575118507386196::1708259976::0::1::::<><>::uid://d1lb4fga5yxbd::::res://Assets/world/TilesetFloor.png<>uid://16odar3pibnb::::res://Scenes/Sprites/Player.tscn<>uid://ctdy2xymqayr5::::res://Scenes/Sprites/Robot.tscn<>uid://bvywuwtdwly6n::::res://Assets/world/TilesetNature.png<>uid://dgivbkwtoxtt7::::res://Assets/world/TilesetVillageAbandoned.png<>uid://eckcyxmpkb7v::::res://Scenes/Sprites/Trashbag.tscn<>uid://cah601hyxq6tl::::res://Assets/world/FlagRed16x16.png<>uid://davp1w8pp8vi3::::res://Assets/world/Cactus_Sprite_Sheet.png<>uid://b8oeusywhhtix::::res://Assets/Sprites/png/tv-Sheet.png<>uid://f4o61ii15qld::::res://Scenes/Main Tree.tscn<>res://Scenes/TileMap_Stage_1.gd<>res://Scenes/TileMap_Stage_1_1.gd<>res://Scenes/TileMap_Stage_3_1.gd<>res://Scenes/TileMap_Stage_4_1.gd<>uid://d3o0uwvo1hcip::::res://Scenes/Big_Rock_Type_1.tscn<>uid://22g7bxvra40d::::res://Scenes/Sprites/Big_Rock_Type_2.tscn<>uid://bk4t4win6umfb::::res://Scenes/Sprites/Lil_Rock_Type_1.tscn<>uid://douopko4xmkbq::::res://Scenes/Sprites/TV.tscn<>uid://c7o5uw45esu3a::::res://Scenes/Sprites/Can.tscn<>uid://boi76u42p46oc::::res://Scenes/Sprites/six_pack_plastic.tscn<>uid://d117514ugc3fe::::res://Scenes/Sprites/GameBoy.tscn<>res://Scenes/Sprites/Recycle_bin.tscn<>res://Scenes/Sprites/Garbage_bin.tscn<>res://Scenes/Scripts/Recycle_bin.gd
+Main Tree Anim.tscn::PackedScene::6998397921570633181::1708259080::0::1::::<><>::uid://b7gukuqrt6drg::::res://Assets/Sprites/png/tree-Sheet.png
+Main Tree.tscn::PackedScene::411717948932642889::1708259976::0::1::::<><>::uid://c6ycudsbq03af::::res://Scenes/Main Tree Anim.tscn
+main_game.tscn::PackedScene::317980821621714938::1708260002::0::1::::<><>::res://Scenes/Scripts/MainGame.gd<>res://Scenes/Scripts/HealthBarText.gd<>uid://sxldrl2dlyq::::res://Scenes/Game.tscn<>uid://cis2yb5dqg2h0::::res://Scenes/StatusBar.tscn<>uid://bmvkiddgshtwu::::res://Scenes/PauseScreen.tscn
+PauseScreen.tscn::PackedScene::3272660358965076900::1708259976::0::1::::<><>::res://Scenes/Scripts/PauseScreen.gd
+StatusBar.tscn::PackedScene::5373193232947386755::1708259976::0::1::::<><>::uid://7ov8eoglomn3::::res://Assets/GUI/BackPackIndicatorPNG/BackpackIndicator1.png<>uid://co3jgh351oarg::::res://Assets/GUI/BackPackIndicatorPNG/BackpackIndicator7.png<>uid://dorqvacnfsbxi::::res://Assets/GUI/BackPackIndicatorPNG/BackpackIndicator8.png<>uid://5dmcl12yogca::::res://Assets/GUI/BackPackIndicatorPNG/BackpackIndicator9.png<>uid://crrxstr423578::::res://Assets/GUI/BackPackIndicatorPNG/BackpackIndicator2.png<>uid://30v6denqq1e0::::res://Assets/GUI/BackPackIndicatorPNG/BackpackIndicator3.png<>uid://cgvl77fuu0goa::::res://Assets/GUI/BackPackIndicatorPNG/BackpackIndicator4.png<>uid://cdph3vqdbewd7::::res://Assets/GUI/BackPackIndicatorPNG/BackpackIndicator5.png<>uid://bc3iprernnwr7::::res://Assets/GUI/BackPackIndicatorPNG/BackpackIndicator6.png<>res://Scenes/Scripts/Backpack.gd<>uid://crsn7ty3sm2k3::::res://Assets/GUI/progressBar.png<>uid://oe30vu7cs67c::::res://Assets/GUI/timer/timer1.png<>uid://b4hda5hpe6xrt::::res://Assets/GUI/timer/timer2.png<>res://Scenes/Scripts/TextureProgressBar.gd
 TileMap_Stage_1.gd::GDScript::-1::1708257749::0::1::::<>TileMap<>::
 TileMap_Stage_1_1.gd::GDScript::-1::1708257749::0::1::::<>TileMap<>::
 TileMap_Stage_3_1.gd::GDScript::-1::1708257749::0::1::::<>TileMap<>::
 TileMap_Stage_4_1.gd::GDScript::-1::1708257749::0::1::::<>TileMap<>::
-::res://Scenes/Scripts/::1708258121
-Backpack.gd::GDScript::-1::1708257613::0::1::::<>TextureRect<>::
+::res://Scenes/Scripts/::1708260703
+Backpack.gd::GDScript::-1::1708258813::0::1::::<>TextureRect<>::
 Big_Rock_Type_1.gd::GDScript::-1::1708257749::0::1::::<>StaticBody2D<>::
 Big_Rock_Type_2.gd::GDScript::-1::1708257749::0::1::::<>StaticBody2D<>::
 Garbage_bin.gd::GDScript::-1::1708257414::0::1::::<>CharacterBody2D<>::
 HealthBarText.gd::GDScript::-1::1708235251::0::1::::<>TextEdit<>::
 Lil_Rock_Type_1.gd::GDScript::-1::1708257749::0::1::::<>StaticBody2D<>::
-MainGame.gd::GDScript::-1::1708235251::0::1::::<>Control<>::
-PauseScreen.gd::GDScript::-1::1708257613::0::1::::<>CanvasLayer<>::
-Player.gd::GDScript::-1::1708257841::0::1::::<>CharacterBody2D<>::
+MainGame.gd::GDScript::-1::1708259875::0::1::::<>Control<>::
+PauseScreen.gd::GDScript::-1::1708259976::0::1::::<>CanvasLayer<>::
+Player.gd::GDScript::-1::1708260701::0::1::::<>CharacterBody2D<>::
+Recycle_bin.gd::GDScript::-1::1708259254::0::1::::<>CharacterBody2D<>::
 Robot.gd::GDScript::-1::1708210399::0::1::::<>CharacterBody2D<>::
 TextureProgressBar.gd::GDScript::-1::1708257613::0::1::::<>TextureProgressBar<>::
 Timer.gd::GDScript::-1::1708257749::0::1::::<>Timer<>::
 Trashbag.gd::GDScript::-1::1708214059::0::1::::<>StaticBody2D<>::
-::res://Scenes/Sprites/::1708257851
+::res://Scenes/Sprites/::1708260701
 Big_Rock_Type_1.gd::GDScript::-1::1708257749::0::1::::<>StaticBody2D<>::
 Big_Rock_Type_1.tscn::PackedScene::7885418863131962967::1708257749::0::1::::<><>::res://Scenes/Sprites/Big_Rock_Type_1.gd<>uid://c0dcksk1sa0ah::::res://Scenes/Big_Rock_Type_1_anim.tscn
 Big_Rock_Type_2.tscn::PackedScene::1951258513978791481::1708257749::0::1::::<><>::uid://chw1uatb7gwms::::res://Scenes/Sprites/Big_Rock_Type_2_anim.tscn<>res://Scenes/Scripts/Big_Rock_Type_2.gd
 Big_Rock_Type_2_anim.tscn::PackedScene::5311193970571513618::1708257749::0::1::::<><>::uid://b6w2o207avrij::::res://Assets/Sprites/png/biggerrock_animated-Sheet.png
-Can.tscn::PackedScene::7049644079703337944::1708257749::0::1::::<><>::res://Scenes/Scripts/Trashbag.gd<>uid://bw4ibpar7tvk5::::res://Assets/Sprites/png/popcan.png
+Can.tscn::PackedScene::7049644079703337944::1708259976::0::1::::<><>::res://Scenes/Scripts/Trashbag.gd<>uid://bw4ibpar7tvk5::::res://Assets/Sprites/png/popcan.png
 GameBoy.tscn::PackedScene::9039843736182642510::1708257749::0::1::::<><>::res://Scenes/Scripts/Trashbag.gd<>uid://dgj8ifmtfnokl::::res://Assets/Sprites/png/gameboy.png
+Garbage_bin.tscn::PackedScene::-1::1708257414::0::1::::<><>::
 Lil_Rock_Type_1.tscn::PackedScene::3149382654331988747::1708257749::0::1::::<><>::res://Scenes/Scripts/Lil_Rock_Type_1.gd<>uid://3ev0kidhevb2::::res://Scenes/Sprites/Lil_Rock_Type_1_anim.tscn
 Lil_Rock_Type_1_anim.tscn::PackedScene::1974865372314642945::1708257749::0::1::::<><>::uid://8eds5p4qqbtn::::res://Assets/Sprites/png/lilrock_animated-Sheet.png
-Player.tscn::PackedScene::1889761067799368239::1708257841::0::1::::<><>::uid://c52ad4o86135v::::res://Assets/Sprites/player_tmp.png<>res://Scenes/Scripts/Player.gd
+Player.tscn::PackedScene::1889761067799368239::1708260701::0::1::::<><>::uid://c52ad4o86135v::::res://Assets/Sprites/player_tmp.png<>res://Scenes/Scripts/Player.gd
+Recycle_bin.tscn::PackedScene::-1::1708257414::0::1::::<><>::
 Robot.tscn::PackedScene::6114129199711818176::1708249559::0::1::::<><>::uid://daak81rctk83t::::res://Assets/Sprites/robot_1_animated-Sheet.png<>res://Scenes/Scripts/Robot.gd
 six_pack_plastic.tscn::PackedScene::3387578916551919826::1708257749::0::1::::<><>::res://Scenes/Scripts/Trashbag.gd<>uid://6iksx12wwkqi::::res://Assets/Sprites/png/6packplastic.png
-Trashbag.tscn::PackedScene::285496168232293977::1708257749::0::1::::<><>::res://Scenes/Scripts/Trashbag.gd<>uid://bpwg621m25l5e::::res://Assets/Sprites/png/garbagebag.png
+Trashbag.tscn::PackedScene::285496168232293977::1708259976::0::1::::<><>::res://Scenes/Scripts/Trashbag.gd<>uid://bpwg621m25l5e::::res://Assets/Sprites/png/garbagebag.png
 TV.tscn::PackedScene::8184070790109865546::1708257749::0::1::::<><>::res://Scenes/Scripts/Trashbag.gd<>uid://b8oeusywhhtix::::res://Assets/Sprites/png/tv-Sheet.png

@@ -12,3 +12,4 @@ res://Scenes/Scripts/Recycle_bin.gd
 res://Scenes/Sprites/Trashbag.tscn
 res://Scenes/Sprites/Can.tscn
 res://Scenes/Scripts/PauseScreen.gd
+res://Scenes/Scripts/TextureProgressBar.gd
