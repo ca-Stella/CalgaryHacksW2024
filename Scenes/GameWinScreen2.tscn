@@ -1,7 +1,10 @@
-[gd_scene load_steps=6 format=3 uid="uid://7dcsv2m8hfgr"]
+[gd_scene load_steps=16 format=3 uid="uid://7dcsv2m8hfgr"]
 
 [ext_resource type="Texture2D" uid="uid://b7gukuqrt6drg" path="res://Assets/Sprites/png/tree-Sheet.png" id="1_cupfo"]
 [ext_resource type="Script" path="res://Scenes/GameWinScreen2.gd" id="1_hu8qr"]
+[ext_resource type="FontFile" uid="uid://dq07hgexq0h1e" path="res://Assets/PressStart2P-vaV7.ttf" id="3_msena"]
+[ext_resource type="Texture2D" uid="uid://b8oeusywhhtix" path="res://Assets/Sprites/png/tv-Sheet.png" id="4_7j1qg"]
+[ext_resource type="Texture2D" uid="uid://b6w2o207avrij" path="res://Assets/Sprites/png/biggerrock_animated-Sheet.png" id="5_b16ny"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_21kiu"]
 atlas = ExtResource("1_cupfo")
@@ -23,6 +26,57 @@ animations = [{
 "loop": true,
 "name": &"default",
 "speed": 5.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mwba6"]
+atlas = ExtResource("4_7j1qg")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_83cp3"]
+atlas = ExtResource("4_7j1qg")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_v3wwc"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mwba6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_83cp3")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c7moh"]
+atlas = ExtResource("5_b16ny")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ns7sj"]
+atlas = ExtResource("5_b16ny")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uwso0"]
+atlas = ExtResource("5_b16ny")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_y84xx"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c7moh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ns7sj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uwso0")
+}],
+"loop": true,
+"name": &"default",
+"speed": 2.0
 }]
 
 [node name="GameWinScreen2" type="CanvasLayer"]
@@ -56,26 +110,50 @@ layout_mode = 2
 size_flags_vertical = 0
 theme_override_constants/separation = 24
 
-[node name="Label" type="Label" parent="ColorRect/MarginContainer/VBoxContainer"]
+[node name="HBoxContainer" type="HBoxContainer" parent="ColorRect/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 0
+alignment = 1
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="ColorRect/MarginContainer/VBoxContainer/HBoxContainer"]
+position = Vector2(303, 184)
+scale = Vector2(1.55556, 1.55556)
+sprite_frames = SubResource("SpriteFrames_tolm2")
+autoplay = "default"
+
+[node name="Label" type="Label" parent="ColorRect/MarginContainer/VBoxContainer/HBoxContainer"]
 texture_filter = 1
 layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_msena")
 text = "Congratulations
 You won! "
 horizontal_alignment = 1
 
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="ColorRect/MarginContainer/VBoxContainer/HBoxContainer"]
+position = Vector2(-55, -22)
+scale = Vector2(2.75, 2.75)
+sprite_frames = SubResource("SpriteFrames_v3wwc")
+autoplay = "default"
+
+[node name="AnimatedSprite2D3" type="AnimatedSprite2D" parent="ColorRect/MarginContainer/VBoxContainer/HBoxContainer"]
+position = Vector2(-51, 171)
+scale = Vector2(1.71875, 1.71875)
+sprite_frames = SubResource("SpriteFrames_y84xx")
+autoplay = "default"
+frame_progress = 0.69751
+
 [node name="RestartButton" type="Button" parent="ColorRect/MarginContainer/VBoxContainer"]
-texture_filter = 2
+custom_minimum_size = Vector2(0, 36)
 layout_mode = 2
+theme_override_fonts/font = ExtResource("3_msena")
 text = "RESTART"
 
 [node name="QuitButton" type="Button" parent="ColorRect/MarginContainer/VBoxContainer"]
-texture_filter = 2
+custom_minimum_size = Vector2(0, 36)
 layout_mode = 2
+theme_override_fonts/font = ExtResource("3_msena")
 text = "QUIT"
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="ColorRect/MarginContainer/VBoxContainer"]
-sprite_frames = SubResource("SpriteFrames_tolm2")
-autoplay = "default"
 
 [connection signal="button_up" from="ColorRect/MarginContainer/VBoxContainer/RestartButton" to="." method="_on_restart_button_button_up"]
 [connection signal="button_up" from="ColorRect/MarginContainer/VBoxContainer/QuitButton" to="." method="_on_quit_button_button_up"]

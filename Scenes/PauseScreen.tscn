@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://bmvkiddgshtwu"]
+[gd_scene load_steps=3 format=3 uid="uid://bmvkiddgshtwu"]
 
 [ext_resource type="Script" path="res://Scenes/Scripts/PauseScreen.gd" id="1_4nt38"]
+[ext_resource type="FontFile" uid="uid://dq07hgexq0h1e" path="res://Assets/PressStart2P-vaV7.ttf" id="2_p54jc"]
 
 [node name="PauseScreen" type="CanvasLayer"]
 script = ExtResource("1_4nt38")
@@ -11,7 +12,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0.14902, 0.14902, 0.14902, 0.713726)
+color = Color(0.247059, 0.403922, 0.286275, 0.964706)
 
 [node name="MarginContainer" type="MarginContainer" parent="ColorRect"]
 layout_mode = 1
@@ -33,18 +34,21 @@ layout_mode = 2
 theme_override_constants/separation = 24
 
 [node name="RestartButton" type="Button" parent="ColorRect/MarginContainer/VBoxContainer"]
-texture_filter = 2
+custom_minimum_size = Vector2(0, 36)
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_p54jc")
 text = "RESTART"
 
 [node name="ResumeButton" type="Button" parent="ColorRect/MarginContainer/VBoxContainer"]
-texture_filter = 2
+custom_minimum_size = Vector2(0, 36)
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_p54jc")
 text = "RESUME"
 
 [node name="QuitButton" type="Button" parent="ColorRect/MarginContainer/VBoxContainer"]
-texture_filter = 2
+custom_minimum_size = Vector2(0, 36)
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_p54jc")
 text = "QUIT"
 
 [connection signal="button_up" from="ColorRect/MarginContainer/VBoxContainer/RestartButton" to="." method="_on_restart_button_button_up"]

@@ -25,6 +25,8 @@ func _process(delta):
 
 func _on_restart_button_button_up():
 	get_tree().reload_current_scene()
+	set_physics_process(true)
+	get_tree().paused = false
 
 
 func _on_resume_button_button_up():
@@ -33,4 +35,4 @@ func _on_resume_button_button_up():
 
 
 func _on_quit_button_button_up():
-	pass # Replace with function body.
+	get_tree().quit()

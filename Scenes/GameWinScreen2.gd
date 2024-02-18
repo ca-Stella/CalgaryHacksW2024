@@ -12,10 +12,11 @@ func _process(delta):
 	pass
 
 func _on_restart_button_button_up():
-	get_tree().reload_current_scene()
 	get_tree().paused = false
+	get_tree().reload_current_scene()
+	set_physics_process(true)
 
 
 
 func _on_quit_button_button_up():
-	pass # Replace with function body.
+	get_tree().quit()

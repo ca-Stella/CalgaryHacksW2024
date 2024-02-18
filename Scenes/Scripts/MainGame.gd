@@ -58,7 +58,7 @@ func _process(delta):
 	elif mainHealth >= 100:
 		game_win()
 	if mainHealth != 0:
-		if int(actualTimer.time_left) % 59 < 15:
+		if floor(actualTimer.time_left / 60) <= 0:
 			timerLabel.get_parent().get_node("TimerTexture").texture.pause = false
 		timerLabel.text = "%d:%02d" % [floor(actualTimer.time_left / 60), int(actualTimer.time_left) % 60]
 
@@ -72,15 +72,11 @@ func game_over():
 	
 func game_win():
 	paused = true
-	PauseScreen.visible = true
+	PauseScreen.visible = false
 	gameOverScreen.visible = false
-	gameWinScreen.visible=false
+	gameWinScreen.visible= true
 	set_physics_process(false)
 	get_tree().paused = true
-#	gameWinScreen.visible = true
-#	gameOverScreen.visible = false
-#	PauseScreen.visible = false
-#	PauseScreen.queue_free()
 	
 
 func _on_timer_timeout():

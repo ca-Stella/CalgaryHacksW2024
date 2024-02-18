@@ -1249,7 +1249,7 @@ rotation = 1.87099
 skew = 0.139626
 
 [node name="TV" parent="." instance=ExtResource("14_u5hw4")]
-position = Vector2(331, 122)
+position = Vector2(333, 123)
 rotation = -0.534071
 
 [node name="TV6" parent="." instance=ExtResource("14_u5hw4")]
@@ -1279,13 +1279,13 @@ skew = 0.314159
 position = Vector2(138, 92)
 
 [node name="Can4" parent="." instance=ExtResource("15_186yw")]
-position = Vector2(344, 107)
+position = Vector2(337, 86)
 
 [node name="Six Pack Plastic" parent="." instance=ExtResource("16_1wmni")]
 position = Vector2(408, 229)
 
 [node name="Six Pack Plastic2" parent="." instance=ExtResource("16_1wmni")]
-position = Vector2(306, 132)
+position = Vector2(301, 135)
 rotation = 1.40324
 
 [node name="Six Pack Plastic3" parent="." instance=ExtResource("16_1wmni")]
@@ -1313,7 +1313,7 @@ scale = Vector2(1.6, 1.6)
 skew = -0.216421
 
 [node name="GameBoy" parent="." instance=ExtResource("17_emmip")]
-position = Vector2(315, 147)
+position = Vector2(341, 154)
 rotation = -3.0072
 
 [node name="GameBoy5" parent="." instance=ExtResource("17_emmip")]
@@ -1342,7 +1342,7 @@ skew = 0.279253
 position = Vector2(334, 181)
 
 [node name="Robot" parent="." groups=["walle"] instance=ExtResource("2_8sugg")]
-position = Vector2(365, 100)
+position = Vector2(366, 94)
 
 [node name="RecycleBin" parent="." instance=ExtResource("22_pimby")]
 position = Vector2(423, 194)
@@ -1358,7 +1358,7 @@ rotation = 0.602139
 skew = -0.300197
 
 [node name="TV3" parent="." instance=ExtResource("14_u5hw4")]
-position = Vector2(300, 95)
+position = Vector2(302, 93)
 rotation = 2.60752
 skew = -0.249582
 
