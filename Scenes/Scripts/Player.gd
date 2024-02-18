@@ -6,6 +6,9 @@ var garbageCounter = 0
 var faceDirection
 var canPickUp = false
 var garbage = null
+var canPushBin = false
+var bin = null
+var pushingBin = false
 
 func _ready(): 
 	screenSize = get_viewport_rect().size
@@ -38,6 +41,22 @@ func _process(delta):
 			garbageCounter += 1
 			print(garbageCounter, faceDirection)
 			canPickUp = false
+		if canPushBin:
+			pass
+	if Input.is_action_just_pressed("push_e"):
+		if canPushBin and !pushingBin:
+			pushingBin = true
+		elif canPushBin and pushingBin:
+			pushingBin = false
+		if !canPushBin:
+			pushingBin = false
+		print(canPushBin, pushingBin)
+				
+	
+	print(canPickUp)
+
+	if pushingBin and canPushBin:
+		bin.get_parent().move(velocity, speed, delta)
 
 	# if we have a movement vector, move based on speed and play animation
 	if velocity.length() > 0: 
@@ -58,18 +77,22 @@ func _physics_process(delta):
 	pass
 
 
-
-
 func _on_area_2d_area_entered(area):
 	if area.is_in_group("Trash"):
 		garbage = area
 		canPickUp = true
+	if area.is_in_group("Bin"):
+		bin = area
+		canPushBin = true
 
 
 func _on_area_2d_area_exited(area):
 	if area.is_in_group("Trash"):
 		garbage = null
 		canPickUp = false
+	if area.is_in_group("Bin"):
+		bin = null
+		canPushBin = false
 		
 		
 
