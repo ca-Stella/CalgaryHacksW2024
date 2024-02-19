@@ -1,11 +1,9 @@
 extends Control
 
+# Music from: https://www.chosic.com/download-audio/58136/
+
 var mainHealth = 1
 var paused = false
-#var sec = 0
-#var min = 0
-#var Default_sec = 2
-#var Default_min = 0
 var PauseScreen
 var totalNumberGarbage = 34
 var timerLabel
@@ -14,10 +12,6 @@ var loseProgress
 var gameOverScreen
 var gameWinScreen
 
-
-# Music from: https://www.chosic.com/download-audio/58136/
-
-# Called when the node enters the scene tree for the first time.
 func _ready():
 	mainHealth = 1
 	PauseScreen = $PauseScreen
